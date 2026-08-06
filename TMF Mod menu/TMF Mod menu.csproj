@@ -1,0 +1,39 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net9.0</TargetFramework>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="MonoGame.Framework.DesktopGL" Version="3.8.1.303">
+      <PrivateAssets>All</PrivateAssets>
+    </PackageReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="StudioForge.BlockWorld">
+      <HintPath>bin\refrences\StudioForge.BlockWorld.dll</HintPath>
+    </Reference>
+    <Reference Include="StudioForge.BlockWorld.Test">
+      <HintPath>bin\refrences\StudioForge.BlockWorld.Test.dll</HintPath>
+    </Reference>
+    <Reference Include="StudioForge.Engine.Core">
+      <HintPath>bin\refrences\StudioForge.Engine.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="StudioForge.Engine.Game">
+      <HintPath>bin\refrences\StudioForge.Engine.Game.dll</HintPath>
+    </Reference>
+    <Reference Include="StudioForge.Engine.GamerServices">
+      <HintPath>bin\refrences\StudioForge.Engine.GamerServices.dll</HintPath>
+    </Reference>
+    <Reference Include="StudioForge.Engine.GUI">
+      <HintPath>bin\refrences\StudioForge.Engine.GUI.dll</HintPath>
+    </Reference>
+    <Reference Include="StudioForge.Engine.Integration">
+      <HintPath>bin\refrences\StudioForge.Engine.Integration.dll</HintPath>
+    </Reference>
+    <Reference Include="StudioForge.Engine.Services">
+      <HintPath>bin\refrences\StudioForge.Engine.Services.dll</HintPath>
+    </Reference>
+    <Reference Include="StudioForge.TotalMiner.API">
+      <HintPath>bin\refrences\StudioForge.TotalMiner.API.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+</Project>
