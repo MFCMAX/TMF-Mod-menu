@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ModInfoXML>
+  <ID>MFCMAX.TMFModMenu</ID>
+  <Name>TMF Mod Menu</Name>
+  <Desc>A compact in-game utility menu for Total Miner.</Desc>
+  <Author>MFCMAX</Author>
+  <Website></Website>
+  <Version>
+    <Major>0</Major>
+    <Minor>1</Minor>
+    <Patch>0</Patch>
+  </Version>
+</ModInfoXML>
