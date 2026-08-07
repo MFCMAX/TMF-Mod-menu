@@ -361,3 +361,11 @@ MigrationBackup/
 
 # Fody - auto-generated XML schema
 FodyWeavers.xsd
+
+# Total Miner host binaries and local workflow output
+/Lib/
+/artifacts/
+/packages/
+/deployment/
+/test-output/
+**/TMF_TEST.txt

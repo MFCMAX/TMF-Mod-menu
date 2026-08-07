@@ -1,3 +1,4 @@
 <Solution>
   <Project Path="TMF Mod menu/TMF Mod menu.csproj" />
+  <Project Path="tests/TMFModMenu.Tests/TMFModMenu.Tests.csproj" />
 </Solution>

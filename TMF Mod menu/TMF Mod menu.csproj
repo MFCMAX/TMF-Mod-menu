@@ -1,39 +1,31 @@
 <Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
-    <TargetFramework>net9.0</TargetFramework>
+    <TargetFramework>net8.0</TargetFramework>
+    <RootNamespace>TMFModMenu</RootNamespace>
+    <AssemblyName>TMFModMenu</AssemblyName>
+    <Version>0.1.0</Version>
+    <AssemblyVersion>0.1.0.0</AssemblyVersion>
+    <FileVersion>0.1.0.0</FileVersion>
+    <InformationalVersion>0.1.0</InformationalVersion>
+    <IncludeSourceRevisionInInformationalVersion>false</IncludeSourceRevisionInInformationalVersion>
+    <Deterministic>true</Deterministic>
+    <!-- Installed Total Miner assemblies carry a WindowsBase identity that
+         conflicts with the SDK reference pack. This mod does not use it. -->
+    <NoWarn>$(NoWarn);MSB3277;CA1416</NoWarn>
   </PropertyGroup>
   <ItemGroup>
-    <PackageReference Include="MonoGame.Framework.DesktopGL" Version="3.8.1.303">
-      <PrivateAssets>All</PrivateAssets>
-    </PackageReference>
+    <Reference Include="MonoGame.Framework" HintPath="..\Lib\MonoGame.Framework.dll" Private="false" />
+    <Reference Include="StudioForge.BlockWorld" HintPath="..\Lib\StudioForge.BlockWorld.dll" Private="false" />
+    <Reference Include="StudioForge.Engine.Core" HintPath="..\Lib\StudioForge.Engine.Core.dll" Private="false" />
+    <Reference Include="StudioForge.Engine.Game" HintPath="..\Lib\StudioForge.Engine.Game.dll" Private="false" />
+    <Reference Include="StudioForge.Engine.GamerServices" HintPath="..\Lib\StudioForge.Engine.GamerServices.dll" Private="false" />
+    <Reference Include="StudioForge.Engine.GUI" HintPath="..\Lib\StudioForge.Engine.GUI.dll" Private="false" />
+    <Reference Include="StudioForge.Engine.Integration" HintPath="..\Lib\StudioForge.Engine.Integration.dll" Private="false" />
+    <Reference Include="StudioForge.Engine.Net" HintPath="..\Lib\StudioForge.Engine.Net.dll" Private="false" />
+    <Reference Include="StudioForge.Engine.Services" HintPath="..\Lib\StudioForge.Engine.Services.dll" Private="false" />
+    <Reference Include="StudioForge.TotalMiner.API" HintPath="..\Lib\StudioForge.TotalMiner.API.dll" Private="false" />
   </ItemGroup>
   <ItemGroup>
-    <Reference Include="StudioForge.BlockWorld">
-      <HintPath>bin\refrences\StudioForge.BlockWorld.dll</HintPath>
-    </Reference>
-    <Reference Include="StudioForge.BlockWorld.Test">
-      <HintPath>bin\refrences\StudioForge.BlockWorld.Test.dll</HintPath>
-    </Reference>
-    <Reference Include="StudioForge.Engine.Core">
-      <HintPath>bin\refrences\StudioForge.Engine.Core.dll</HintPath>
-    </Reference>
-    <Reference Include="StudioForge.Engine.Game">
-      <HintPath>bin\refrences\StudioForge.Engine.Game.dll</HintPath>
-    </Reference>
-    <Reference Include="StudioForge.Engine.GamerServices">
-      <HintPath>bin\refrences\StudioForge.Engine.GamerServices.dll</HintPath>
-    </Reference>
-    <Reference Include="StudioForge.Engine.GUI">
-      <HintPath>bin\refrences\StudioForge.Engine.GUI.dll</HintPath>
-    </Reference>
-    <Reference Include="StudioForge.Engine.Integration">
-      <HintPath>bin\refrences\StudioForge.Engine.Integration.dll</HintPath>
-    </Reference>
-    <Reference Include="StudioForge.Engine.Services">
-      <HintPath>bin\refrences\StudioForge.Engine.Services.dll</HintPath>
-    </Reference>
-    <Reference Include="StudioForge.TotalMiner.API">
-      <HintPath>bin\refrences\StudioForge.TotalMiner.API.dll</HintPath>
-    </Reference>
+    <None Include="..\package\ModInfo.xml" Link="ModInfo.xml" CopyToOutputDirectory="PreserveNewest" />
   </ItemGroup>
 </Project>
